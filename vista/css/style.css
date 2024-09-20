@@ -13,7 +13,8 @@
 }
 
 .img_background{
-    background-image: url('../img/Frame\ 26.png');
+    background-image: url('../img/fondo_login.png');
+
 }
 
 .container_mobile img {
@@ -59,7 +60,8 @@ input {
     font-weight: 500;
     font-size: 16px;
     color: #fff;
-    background-color: #007bff;
+    background-color: #3DE42E;
+    ;
     border: none;
     border-radius: 5px;
     cursor: pointer;
