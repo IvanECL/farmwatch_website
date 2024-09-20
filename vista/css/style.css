@@ -22,6 +22,21 @@
     margin-bottom: 20px;
 }
 
+.color_fecha{
+    color: #3DE42E;
+}
+
+.container_navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 10px;
+}
+
+.widget img {
+    max-width: 100px;
+}
+
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -51,6 +66,12 @@ input {
     background-color: transparent;
     border: 1px solid #d9d9d9;
     border-radius: 5px;
+}
+
+.menu{
+    color: #3DE42E;
+    font-size: 24px;
+    cursor: pointer;
 }
 
 .btn {
