@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados Proyección</title>
+</head>
+<body>
+    <h1>Resultados de la Proyección</h1>
+    <div id="resultadoProyeccion"></div>
+
+    <script>
+        // Obtén los resultados del localStorage
+        const proyeccionResultados = localStorage.getItem('proyeccionResultados');
+
+        // Muestra los resultados en la página
+        document.getElementById('resultadoProyeccion').innerText = proyeccionResultados;
+    </script>
+</body>
+</html>
