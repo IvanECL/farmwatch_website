@@ -18,28 +18,32 @@
         </h2>
     </div>
     <div>
-        <form action="/submit_form" method="post">
-            <label for="">Nombre del dato</label>
+        <form id="proyeccionForm">
+            <label for="">Altitud:</label>
             <br>
-            <input type="text" id="name" name="name" placeholder="Eg: abdefg" required>
+            <input type="text" id="altitud" name="altitud" placeholder="Eg: 2200 m" required>
             <br>
-            <label for="">Nombre del dato</label>
+            <label for="">NDVI:</label>
             <br>
-            <input type="text" id="name1" name="name" placeholder="Eg: abdefg" required>
+            <input type="text" id="ndvi" name="ndvi" placeholder="Eg: 0.72" required>
             <br>
-            <label for="">Nombre del dato</label>
+            <label for="">Temperatura del suelo:</label>
             <br>
-            <input type="text" id="name2" name="name" placeholder="Eg: abdefg" required>
+            <input type="text" id="temperatura_suelo" name="temperatura_suelo" placeholder="Eg: 25°C" required>
             <br>
-            <label for="">Nombre del dato</label>
+            <label for="">Humedad relativa:</label>
             <br>
-            <input type="text" id="name3" name="name" placeholder="Eg: abdefg" required>
+            <input type="text" id="humedad_relativa" name="humedad_relativa" placeholder="Eg: 65%" required>
             <br>
-            <label for="">Nombre del dato</label>
+            <label for="">CIgreen:</label>
             <br>
-            <input type="text" id="name4" name="name" placeholder="Eg: abdefg" required>
-
+            <input type="text" id="cigreen" name="cigreen" placeholder="Eg: 1.5" required>
+            <br>
+            <button type="submit">Obtener Proyecciones</button>
         </form>
     </div>
+    
+    <script src="js/javascript.js"></script>
+
 </body>
 </html>
