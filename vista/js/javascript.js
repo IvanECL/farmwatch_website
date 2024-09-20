@@ -1,9 +1,6 @@
-// Importar axios si no está disponible globalmente
-import axios from 'https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js';
-
-// Función para hacer la llamada a la API de ChatGPT
+// Función para hacer la llamada a la API de ChatGPT usando fetch
 const fetchChatGPTResponse = async (inputData) => {
-    const apiKey = 'sk-1h9dC2D6HhsYUszrBm1_dU9ZRCGKm9ej3Cr-C-zfloT3BlbkFJD0wftMgnProC7fryibppZWOb9Y0tBRfiqI9kyUO3cA';  // Reemplaza con tu API Key de OpenAI
+    const apiKey = 'sk-1h9dC2D6HhsYUszrBm1_dU9ZRCGKm9ej3Cr-C-zfloT3BlbkFJD0wftMgnProC7fryibppZWOb9Y0tBRfiqI9kyUO3cA';
     const url = 'https://api.openai.com/v1/chat/completions';
 
     const messages = [
@@ -12,17 +9,25 @@ const fetchChatGPTResponse = async (inputData) => {
     ];
 
     try {
-        const response = await axios.post(url, {
-            model: 'gpt-3.5-turbo',  // Cambia al modelo que prefieras
-            messages: messages
-        }, {
+        const response = await fetch(url, {
+            method: 'POST',
             headers: {
                 'Authorization': `Bearer ${apiKey}`,
                 'Content-Type': 'application/json'
-            }
+            },
+            body: JSON.stringify({
+                model: 'gpt-3.5-turbo',
+                messages: messages
+            })
         });
 
-        return response.data.choices[0].message.content; // Devuelve la respuesta de ChatGPT
+        if (!response.ok) {
+            throw new Error('Error en la respuesta de la API');
+        }
+
+        const responseData = await response.json();
+        return responseData.choices[0].message.content;
+
     } catch (error) {
         console.error('Error al llamar a la API de ChatGPT:', error);
         throw error;
@@ -46,12 +51,22 @@ document.getElementById('proyeccionForm').addEventListener('submit', async funct
         // Obtén la respuesta de la API de ChatGPT
         const chatGPTResponse = await fetchChatGPTResponse(inputData);
 
-        // Guarda los resultados en el localStorage
-        localStorage.setItem('proyeccionResultados', chatGPTResponse);
+        // Muestra los resultados en el div con id="resultadosProyeccion" con formato
+        const resultadosDiv = document.getElementById('resultadosProyeccion');
+        resultadosDiv.innerHTML = `
+            <h3>Resultados del Análisis</h3>
+            <ul>
+                <li><strong>Altitud:</strong> El cultivo se encuentra a una altitud de ${inputData.altitud} metros sobre el nivel del mar. La altitud puede influir en factores como la temperatura y la disponibilidad de oxígeno para las plantas.</li>
+                <li><strong>NDVI (Normalized Difference Vegetation Index):</strong> El valor de NDVI es ${inputData.NDVI}, lo que indica un buen nivel de vegetación y salud de las plantas en el cultivo.</li>
+                <li><strong>Temperatura del Suelo:</strong> La temperatura del suelo es de ${inputData.temperatura_suelo} grados Celsius, lo cual afecta la germinación y la absorción de nutrientes.</li>
+                <li><strong>Humedad Relativa:</strong> La humedad relativa es del ${inputData.humedad_relativa}%, un factor crucial para el crecimiento de las plantas.</li>
+                <li><strong>CIgreen (Clorofila índice verde):</strong> El valor de CIgreen es ${inputData.CIgreen}, lo que indica la salud de la clorofila en las plantas.</li>
+            </ul>
+            <p>En general, los datos sugieren que el cultivo se encuentra en buenas condiciones. Monitorea estos parámetros regularmente para optimizar el rendimiento.</p>
+        `;
 
-        // Redirige a la pantalla de resultados
-        window.location.href = 'resultados-proyeccion.html';
     } catch (error) {
         console.error('Error al obtener la respuesta de ChatGPT:', error);
+        alert('Ocurrió un error al obtener los resultados.');
     }
 });
