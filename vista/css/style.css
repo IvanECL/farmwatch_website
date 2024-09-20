@@ -22,6 +22,10 @@
     font-weight: bold; 
 }
 
+.pad_login{
+    padding: 10px;
+}
+
 .dm_sans_normal_pad{
     font-family:"DMS Sans";
     font-size: 20px;
