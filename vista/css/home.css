@@ -255,7 +255,7 @@ body {
 .hamburger .bar {
     width: 100%;
     height: 4px;
-    background-color: black;
+    background-color: #3DE42E;
     transition: 0.3s;
 }
 
