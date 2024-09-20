@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../vista/css/style.css">
     <title>Resultados de proyeccion manual</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container_navbar">
@@ -12,57 +18,35 @@
             <img src="./img/widget_clima.svg" alt="widget_clima" srcset="">
         </div>
     </div>
-    <div>
-    <h1>Resultados de la Proyección Manual</h1>
-    <p>A continuación se muestran los resultados de la proyección manual,
+    <div class="intro">
+        <h1>Resultados de la Proyección Manual</h1>
+        <p>A continuación se muestran los resultados de la proyección manual,
         basada en los datos que se ingresaron, juntos con las recomendaciones
         para esta proyección.
-    </p>
+        </p>
     </div>
-    <div>
-        <p>estado de mi cultivo: sano</p>
-
-    </div>
-    <div>
-        <h2>condiciones del suelo</h2>
+    <button class="estado-cultivo">
+        <p>Estado de mi cultivo: sano.</p>
+    </button>
+    <div class="tarjeta" style="background-color: #75D87C;">
+        <h2>Condiciones del suelo</h2>
         <h3>22%</h3>
         <p>Nivel de humedad</p>
     </div>
-    <div>
+    <div class="tarjeta" style="background-color: #64CC6B;">
         <h2>Condiciones del suelo</h2>
-        <h3>50 mg/kg (nitrogeno)</h3>
-        <p>Nutrientes</p>
+        <h3>50></h3>
+        <p>mg/kg Nutrientes</p>
     </div>
-    <div>
+    <div class="tarjeta" style="background-color: #6CCCAC;">
         <h2>Clima y calidad del aire</h2>
-        <h3>28 (De la última sesión)</h3>
+        <h3>28° C</h3>
         <p>Temperatura del aire</p>
     </div>
-    <div>
+    <div class="tarjeta" style="background-color: #40C196;">
         <h2>Clima y calidad del aire</h2>
-        <h3>Dentro de los límites</h3>
+        <h3 style="font-size: 32px;">Dentro de los límites</h3>
         <p>CO2 y NOx</p>
-    </div>
-    <div>
-        <h1>Recomendaciones para tu cultivo</h1>
-    </div>
-    <div>
-        <h2>Recomendaciones</h2>
-        <h3>Riego</h3>
-        <p>Considerar el riego adicional en los próximos debido
-            a la temperatura y la humedad del suelo.
-        </p>
-    </div>
-    <div>
-        <h2>Recomendaciones</h2>
-        <h3>Fertilización</h3>
-        <p>Aplicar fertilizante rico en fósforo y potasio.</p>
-    </div>
-    <div>
-        <h2>Recomendaciones</h2>
-        <h3>Monitoreo</h3>
-        <p>Instalarr sensores adicionales para una mejor 
-            recopilación de datos en tiempo real.</p>
     </div>
 </body>
 </html>

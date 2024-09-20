@@ -74,11 +74,11 @@
 }
 
 h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-weight: 600;
     color: #333;
     font-size: 24px;
-    text-align: center;
+    text-align: left;
     margin-bottom: 20px;
 }
 
@@ -88,7 +88,7 @@ h1 {
 }
 
 label {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 14px;
     color: #333;
 }
@@ -97,7 +97,7 @@ input {
     width: 100%;
     padding: 10px;
     font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     color: #ffffff;
     background-color: transparent;
     border: 1px solid #d9d9d9;
@@ -106,7 +106,7 @@ input {
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 20px;
     height: 100vh; /* Asegura que cubra toda la pantalla */
     background-image: url('../img/Background.svg');
     background-size: cover; /* Hace que el SVG cubra todo el fondo */
@@ -123,7 +123,7 @@ body {
 .btn {
     width: 100%;
     padding: 15px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: #fff;
@@ -137,6 +137,48 @@ body {
 
 .btn:hover {
     background-color: #0056b3;
+}
+
+.intro{
+    padding: 0;
+    font-family: 'DM Sans';
+    justify-content: left;
+}
+
+.intro h1{
+    color: #075800;
+}
+
+.estado-cultivo{
+    font-family: 'DM Sans';
+    border-color: transparent;
+    background-color: #A8FFBB;
+    border-radius: 20px;
+    padding: 0 0px;
+    margin-bottom: 24px;
+}
+
+.estado-cultivo p{
+    padding: 7px 15px;
+    margin: 0;
+}
+
+.tarjeta{
+    color: white;
+    font-family: 'DM Sans';
+    padding: 15px 30px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.tarjeta h2{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.tarjeta h3{
+    font-size: 64px;
+    margin: 0;
 }
 
 /* Media Queries para pantallas más grandes */
