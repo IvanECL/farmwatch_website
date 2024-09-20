@@ -181,6 +181,15 @@ body {
     margin: 0;
 }
 
+.generar{
+    background-color: #3DE42E;
+    color: white;
+    font-family: 'DM Sans';
+    border-color: transparent;
+    border-radius: 30px;
+    padding: 12px 17px;
+}
+
 /* Media Queries para pantallas más grandes */
 @media (min-width: 768px) {
     .container_mobile {
@@ -194,60 +203,4 @@ body {
     .btn {
         font-size: 18px;
     }
-}
-
-.card0 {
-    width: 18rem;
-    padding: 10px;
-    background-color: #C8FFD4, #A8FFBB;
-}
-
-.card1 {
-    width: 18rem; 
-    background-color:#75D87C;
-    border-radius: 5px;
-}
-
-.card2 {
-    width: 18rem; 
-    background: #64CC6B;
-    border-radius: 5px;
-}
-
-.card3 {
-    width: 18rem; 
-    background: #6CCCAC;
-    border-radius: 5px;
-}
-
-.card4 {
-    width: 18rem; 
-    background: #40C196;
-    border-radius: 5px;
-}
-
-.res1 {
-    font: DM sans;
-    font-size: 22px;
-    color: #075800;
-    text-align: left ;
-    
-
-}
-
-.res2 {
-    font: DM sans;
-    font-size:  18px;
-    text-align: left;
-}
-
-.card border-dark mb-3 {
-    max-width: 18rem;
-}
-
-.rec1 {
-    font: DM sans;
-    font-size: 18px;
-    color: #075800;
-    text-align: left ;
 }
