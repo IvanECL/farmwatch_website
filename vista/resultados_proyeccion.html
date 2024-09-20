@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Resultados de proyeccion manual</title>
 </head>
 <body>
@@ -13,56 +15,89 @@
         </div>
     </div>
     <div>
-    <h1>Resultados de la Proyección Manual</h1>
-    <p>A continuación se muestran los resultados de la proyección manual,
+    <h1 class="res1">Resultados de la <br> Proyección Manual</h1>
+    <p class="res2">A continuación se muestran los resultados de la proyección manual,
         basada en los datos que se ingresaron, juntos con las recomendaciones
         para esta proyección.
     </p>
     </div>
-    <div>
-        <p>estado de mi cultivo: sano</p>
+    
+    <div class="card0">
+        <div class="card-body">
+          <p class="card-text">estado de mi cultivo: sano</p>
+        </div>
+      </div>
+    </div>
+    <br>
 
+    <div class="card1">
+        <div class="card-body">
+          <h5 class="card-title">Condiciones del suelo</h5>
+          <p class="card-text">22%</p>
+          <p class="card-text">Nivel de humedad</p>
+        </div>
+      </div>
+      <br>
+
+    <div class="card2">
+    <div class="card-body">
+        <h5 class="card-title">Condiciones del suelo</h5>
+        <p class="card-text">50 mg/kg (nitrogeno)</p>
+        <p class="card-text">Nutrientes</p>
     </div>
-    <div>
-        <h2>condiciones del suelo</h2>
-        <h3>22%</h3>
-        <p>Nivel de humedad</p>
     </div>
-    <div>
-        <h2>Condiciones del suelo</h2>
-        <h3>50 mg/kg (nitrogeno)</h3>
-        <p>Nutrientes</p>
+    <br>
+
+    <div class="card3">
+        <div class="card-body">
+            <h5 class="card-title">Clima y calidad del aire</h5>
+            <p class="card-text">28 (De la última sesión)</p>
+            <p class="card-text">Temperatura del aire</p>
     </div>
-    <div>
-        <h2>Clima y calidad del aire</h2>
-        <h3>28 (De la última sesión)</h3>
-        <p>Temperatura del aire</p>
     </div>
-    <div>
-        <h2>Clima y calidad del aire</h2>
-        <h3>Dentro de los límites</h3>
-        <p>CO2 y NOx</p>
+    <br>
+
+    <div class="card4"></div>
+        <div class="card-body">
+            <h5 class="card-title">Clima y calidad del aire</h5>
+            <p class="card-text">Dentro de los límites</p>
+            <p class="card-text">CO2 y NOx</p>
     </div>
-    <div>
+    </div>
+    <br>
+
+    <div class="rec1" >
         <h1>Recomendaciones para tu cultivo</h1>
     </div>
-    <div>
-        <h2>Recomendaciones</h2>
-        <h3>Riego</h3>
-        <p>Considerar el riego adicional en los próximos debido
-            a la temperatura y la humedad del suelo.
-        </p>
-    </div>
-    <div>
-        <h2>Recomendaciones</h2>
-        <h3>Fertilización</h3>
-        <p>Aplicar fertilizante rico en fósforo y potasio.</p>
-    </div>
-    <div>
-        <h2>Recomendaciones</h2>
-        <h3>Monitoreo</h3>
-        <p>Instalarr sensores adicionales para una mejor 
-            recopilación de datos en tiempo real.</p>
-    </div>
+
+    <div class="card border-dark mb-3">
+        <div class="card-body text-dark">
+          <h5 class="card-title">Recomendaciones</h5>
+          <h3 class="card-text">Riego</h3>
+          <p>Considerar el riego adicional en los próximos días 
+            debido a la temperatura y la humedad del suelo.
+          </p>
+        </div>
+      </div>
+
+      <div class="card border-dark mb-3" style="max-width: 18rem;"></div>
+        <div class="card-body text-dark">
+          <h5 class="card-title">Recomendaciones</h5>
+          <h3 class="card-text">Fertilización</h3>
+          <p>Aplicar fertilizante rico en fósforto y potasio
+          </p>
+        </div>
+      </div>
+
+      <div class="card border-dark mb-3" style="max-width: 18rem;"></div>
+        <div class="card-body text-dark">
+          <h5 class="card-title">Recomendaciones</h5>
+          <h3 class="card-text">Monitoreo</h3>
+          <p>Instalar sensores adicionales para una mejor
+            recopilación de datos en tiempo real.
+          </p>
+        </div>
+      </div>
+
 </body>
 </html>
