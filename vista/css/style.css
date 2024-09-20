@@ -3,7 +3,6 @@
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
-    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,14 +11,47 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.width_login{
+    max-width: 270px;
+}
+
+.dm_sans_big{
+    font-family:"DMS Sans";
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold; 
+}
+
+.dm_sans_normal_pad{
+    font-family:"DMS Sans";
+    font-size: 20px;
+    color: #fff;
+    font-weight: 200;
+    padding-left: 30px;
+}
+
 .img_background{
     background-image: url('../img/fondo_login.png');
+    background-repeat: round;
+    max-width: 440px;
+    width: 500%; /* Ocupa todo el ancho */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+    padding-top: 50px;
 
 }
+
+.logo_padding{
+    padding-left: 20px;
+}
+
 
 .container_mobile img {
     max-width: 150px; /* Logo más pequeño para móvil */
     margin-bottom: 20px;
+}
+
+.space_index{
+    padding: 10px;
 }
 
 .color_fecha{
