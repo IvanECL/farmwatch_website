@@ -3,18 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resultados Proyección</title>
+    <title>Prueba IA - Proyección</title>
+    <script src="js/main.js" defer></script> <!-- Asegúrate de que el script esté cargado -->
 </head>
 <body>
-    <h1>Resultados de la Proyección</h1>
-    <div id="resultadoProyeccion"></div>
-
-    <script>
-        // Obtén los resultados del localStorage
-        const proyeccionResultados = localStorage.getItem('proyeccionResultados');
-
-        // Muestra los resultados en la página
-        document.getElementById('resultadoProyeccion').innerText = proyeccionResultados;
-    </script>
+    <h1>Formulario de Proyección de Datos Agrícolas</h1>
+    
+    <!-- Formulario -->
+    <form id="proyeccionForm">
+        <label for="altitud">Altitud:</label>
+        <input type="text" id="altitud" name="altitud"><br><br>
+        
+        <label for="ndvi">NDVI:</label>
+        <input type="text" id="ndvi" name="ndvi"><br><br>
+        
+        <label for="temperatura_suelo">Temperatura del Suelo:</label>
+        <input type="text" id="temperatura_suelo" name="temperatura_suelo"><br><br>
+        
+        <label for="humedad_relativa">Humedad Relativa:</label>
+        <input type="text" id="humedad_relativa" name="humedad_relativa"><br><br>
+        
+        <label for="cigreen">CI Green:</label>
+        <input type="text" id="cigreen" name="cigreen"><br><br>
+        
+        <button type="submit">Enviar Proyección</button>
+    </form>
+    
 </body>
 </html>

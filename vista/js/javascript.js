@@ -1,4 +1,5 @@
-import axios from 'https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js'; // Asegúrate de importar axios si no está disponible globalmente
+// Importar axios si no está disponible globalmente
+import axios from 'https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js';
 
 // Función para hacer la llamada a la API de ChatGPT
 const fetchChatGPTResponse = async (inputData) => {
@@ -12,7 +13,7 @@ const fetchChatGPTResponse = async (inputData) => {
 
     try {
         const response = await axios.post(url, {
-            model: 'gpt-3.5-turbo',
+            model: 'gpt-3.5-turbo',  // Cambia al modelo que prefieras
             messages: messages
         }, {
             headers: {
