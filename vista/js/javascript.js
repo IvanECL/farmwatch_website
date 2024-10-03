@@ -1,6 +1,6 @@
 // Función para hacer la llamada a la API de ChatGPT usando fetch
 const fetchChatGPTResponse = async (inputData) => {
-    const apiKey = 'sk-1h9dC2D6HhsYUszrBm1_dU9ZRCGKm9ej3Cr-C-zfloT3BlbkFJD0wftMgnProC7fryibppZWOb9Y0tBRfiqI9kyUO3cA';
+    const apiKey = '';
     const url = 'https://api.openai.com/v1/chat/completions';
 
     const messages = [
