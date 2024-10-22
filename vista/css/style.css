@@ -181,6 +181,15 @@ body {
     margin: 0;
 }
 
+.generar{
+    background-color: #3DE42E;
+    color: white;
+    font-family: 'DM Sans';
+    border-color: transparent;
+    border-radius: 30px;
+    padding: 12px 17px;
+}
+
 /* Media Queries para pantallas más grandes */
 @media (min-width: 768px) {
     .container_mobile {
